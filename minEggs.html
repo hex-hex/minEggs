@@ -6,12 +6,9 @@
             function getMinEgg()
             {
                 var minEgg = 9;
-                while(true)
+                while( minEgg % 8 != 1 || minEgg % 5 !=4 || minEgg % 7 !=0)
                 {
-                    if(minEgg % 8 == 1 && minEgg % 5 ==4 && minEgg % 7 ==0)
-                        break;
-                    else
-                        minEgg += 18;
+                    minEgg += 18;
                 };
                 document.getElementById("output").innerHTML = "The minimum amount of eggs is" + minEgg + ".";
             };
@@ -26,3 +23,4 @@
         </button>
     </body>
 </html>
+
