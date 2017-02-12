@@ -1,16 +1,16 @@
-public class minEggs
+using System;
+
+namespace minEgg
 {
-    public static void main()
+    class Program
     {
-        int minEggs = 9;
-        while (true)
+        static void Main(string[] args)
         {
-            if (minEggs % 8 == 1 && minEggs % 7 == 0 && minEggs % )
-                break;
-            else
+            int minEggs = 9;
+            while (minEggs % 8 != 1 || minEggs % 7 != 0 || minEggs % 5 != 4)
                 minEggs += 18;
-        }   
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
+            Console.WriteLine(minEggs);
+            Console.ReadKey();
+        }
     }
 }
